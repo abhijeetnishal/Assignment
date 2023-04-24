@@ -1,0 +1,35 @@
+.taskPage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.taskname{
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    padding: 20px 0px;
+}
+.table_container{
+    border: 1px solid black;
+    border-collapse:collapse;
+    width: 80%;
+    border-radius: 10px;
+}
+.main_tr{
+    border-bottom: 1px solid black;
+    width: 80%;
+    height: 30px;
+}
+.main_td{
+    font-size: 20px;
+    font-weight: 600;
+    border-right: 1px solid black;
+    padding-left: 5px;
+}
+.sub_td{
+    font-size: 16px;
+    font-weight: 500;
+    border-right: 1px solid black;
+    padding-left: 5px;
+}
