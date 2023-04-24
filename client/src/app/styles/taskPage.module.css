@@ -12,9 +12,8 @@
 }
 .table_container{
     border: 1px solid black;
-    border-collapse:collapse;
+    border-collapse: collapse;
     width: 80%;
-    border-radius: 10px;
 }
 .main_tr{
     border-bottom: 1px solid black;

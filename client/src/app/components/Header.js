@@ -1,8 +1,9 @@
 import React from 'react'
+import styles from '../styles/navbar.module.css'
 
 const Header = () => {
   return (
-    <div style={{display:'flex',justifyContent:'center', fontSize:'25px'}}>
+    <div className={styles.header}>
         Assignment
     </div>
   )

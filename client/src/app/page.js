@@ -1,12 +1,13 @@
 "use client";
 import React, { useEffect } from 'react'
+import styles from './page.module.css'
 
 const page = () => {
 
   useEffect(() => {
     const fetchData = async () => {
           // get the data from the api
-          const response = await fetch('http://localhost:4000/');
+          const response = await fetch('https://oruphoneserver.vercel.app/');
           const data = await response.json();
           console.log(data);
       }
@@ -18,9 +19,11 @@ const page = () => {
   }, []);
 
   return (
-    <div style={{width:'100%',height:'calc(100vh - 130px)',fontSize:'30px' , display:'flex',justifyContent:'center', alignItems:'center'}}>
-      Click on above task button to show the output
-    </div>
+    <>
+      <div className={styles.landing_page}>
+        Click on above task button to show the output
+      </div>
+    </>
   )
 }
 

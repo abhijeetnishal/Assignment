@@ -17,3 +17,9 @@
     width:80px;
     height: 40px;
 }
+.header{
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 500;
+}

@@ -10,12 +10,12 @@ const task5 = () => {
   useEffect(() => {
       const fetchData = async () => {
           // get the data from the api
-          const response = await fetch('http://localhost:4000/query-5');
+          const response = await fetch('https://oruphoneserver.vercel.app/query-5');
           // convert the data to json
           const data = await response.json();
           setData(data);
           setDataLength(data.length);
-          console.log(data);
+          //console.log(data);
       }
       
       // call the function
