@@ -12,7 +12,6 @@ const query1Functionality = async (req, res)=>{
                 }
             ]
         });
-        console.log(query1.length);
         res.status(200).json(query1);
     }
     catch(error){
@@ -30,7 +29,6 @@ const query2Functionality = async (req, res)=>{
             ]
           });
         res.status(200).json(query2);
-        console.log(query2.length);
     }
     catch(error){
         res.status(500).json(`internal server error: ${error}`);
@@ -48,7 +46,6 @@ const query3Functionality = async (req, res)=>{
               ]
         });
         res.status(200).json(query3);
-        console.log(query3.length);
     }
     catch(error){
         res.status(500).json(`internal server error: ${error}`);
@@ -71,7 +68,6 @@ const query4Functionality = async (req, res)=>{
             ]
         });
         res.status(200).json(query4);
-        console.log(query4.length);
     }
     catch(error){
         res.status(500).json(`internal server error: ${error}`);
@@ -99,7 +95,6 @@ const query5Functionality = async (req, res)=>{
         ])
 
         res.status(200).json(query5);
-        console.log(query5.length);
     }
     catch(error){
         res.status(500).json(`internal server error: ${error}`);
