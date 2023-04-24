@@ -93,7 +93,6 @@ const query5Functionality = async (req, res)=>{
             // limit to top 10 cities
             { $limit: 10 }
         ])
-
         res.status(200).json(query5);
     }
     catch(error){
