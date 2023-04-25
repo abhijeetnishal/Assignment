@@ -1,7 +1,11 @@
+//import userSchema from models to perform query on this schema
 const userSchema = require('../models/userModel');
 
+//task-1 functionality
 const query1Functionality = async (req, res)=>{
+    //error handling using try-catch
     try{
+        //query for task-1
         const query1 = await userSchema.find({
             $and:[
                 { income: { $lt: "$5" } },
@@ -19,8 +23,11 @@ const query1Functionality = async (req, res)=>{
     }
 }
 
+//task-2 functionality
 const query2Functionality = async (req, res)=>{
+    //error handling using try-catch
     try{
+        //query for task-2
         const query2 = await userSchema.find({
             $and: [
               { gender: 'Male' },
@@ -35,8 +42,11 @@ const query2Functionality = async (req, res)=>{
     }
 }
 
+//task-3 functionality
 const query3Functionality = async (req, res)=>{
+    //error handling using try-catch
     try{
+        //query for task-3
         const query3 = await userSchema.find({
             // $and operator to combine three conditions: last_name starts with "M", quote character length is greater than 15, and email includes the user's last name.
             $and: [
@@ -52,8 +62,11 @@ const query3Functionality = async (req, res)=>{
     }
 }
 
+//task-4 functionality
 const query4Functionality = async (req, res)=>{
+    //error handling using try-catch
     try{
+        //query for task-4
         const query4 = await userSchema.find({
             $and: [
                 {
@@ -74,8 +87,11 @@ const query4Functionality = async (req, res)=>{
     }
 }
 
+//task-5 functionality
 const query5Functionality = async (req, res)=>{
+    //error handling using try-catch
     try{
+        //query for task-5
         const query5 = await userSchema.aggregate([
             // match only documents where income starts with "$"
             { $match: { income: /^[$]/ } },
@@ -100,6 +116,7 @@ const query5Functionality = async (req, res)=>{
     }
 }
 
+//export functionality to use in userRoutes.js file
 module.exports = {
     query1Functionality,
     query2Functionality,

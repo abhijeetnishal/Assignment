@@ -13,6 +13,7 @@ const task1 = () => {
           const response = await fetch('https://oruphoneserver.vercel.app/query-1');
           // convert the data to json
           const data = await response.json();
+          
           setData(data);
           setDataLength(data.length);
           //console.log(data);
