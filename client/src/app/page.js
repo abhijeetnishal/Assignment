@@ -21,7 +21,7 @@ const page = () => {
   return (
     <>
       <div className={styles.landing_page}>
-        Click on above task button to show the output
+        Click on the above tasks to get data of respective task.
       </div>
     </>
   )
